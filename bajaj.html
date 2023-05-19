@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>emplyoee data</title>
+  <link rel="stylesheet" type="text/css" href="styles1.css">
+</head>
+<body>
+    <div class="icon">
+   <img src="bajajicon.png" alt="the best"  >  
+    </div>
+  <div class="container">
+    <h1>Developers</h1>
+
+
+    <div class="search-bar">
+      <label for="name-search">Search by Name:</label>
+      <input type="text" id="name-search" oninput="searchByName()" placeholder="Enter name">
+    </div>
+
+    <div class="filter-bar">
+      <label for="designation-filter">Filter by Designation:</label>
+      <select id="designation-filter" onchange="filterByDesignation()">
+        <option value="">All</option>
+        <option value="Frontend Developer">Frontend Developer</option>
+        <option value="Backend Developer">Backend Developer</option>
+        <option value="Full Stack Developer">Full Stack Developer</option>
+      </select>
+    </div>
+
+    <div id="developer-list"></div>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>
