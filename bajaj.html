@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>emplyoee data</title>
+  <title>Employee Data</title>
   <link rel="stylesheet" type="text/css" href="styles1.css">
 </head>
 <body>
-    <div class="icon">
-   <img src="bajajicon.png" alt="the best"  >  
+  <header class="navbar">
+    <div class="logo">
+      <img src="bajajicon.png" alt="Company Logo">
     </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
   <div class="container">
-    <h1>Developers</h1>
-
-
+    <h1>Employees</h1>
     <div class="search-bar">
       <label for="name-search">Search by Name:</label>
       <input type="text" id="name-search" oninput="searchByName()" placeholder="Enter name">
@@ -21,9 +29,9 @@
       <label for="designation-filter">Filter by Designation:</label>
       <select id="designation-filter" onchange="filterByDesignation()">
         <option value="">All</option>
-        <option value="Frontend Developer">Frontend Developer</option>
-        <option value="Backend Developer">Backend Developer</option>
-        <option value="Full Stack Developer">Full Stack Developer</option>
+        <option value="Senior Developer">Senior Developer</option>
+        <option value="QA Engineer">QA Engineer</option>
+        <option value="Project Manager">Project Manager</option>
       </select>
     </div>
 
